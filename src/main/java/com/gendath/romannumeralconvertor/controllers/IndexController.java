@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
-public class indexController {
+public class IndexController {
 
     RomanNumeralConvertorService service;
 
-    public indexController(RomanNumeralConvertorService service) {
+    public IndexController(RomanNumeralConvertorService service) {
         this.service = service;
     }
 

@@ -24,6 +24,15 @@ public class RomanNumeralConvertorService {
         numeralMap.put(1, "I");
     }
 
+    public String toRomanAPI(int number){
+
+        if(number<1||number>3999){
+            return "Number must be between 1 and 3999";
+        }
+
+        String result = "";
+        return toRoman(number, result);
+    }
     public String toRoman(int number){
 
         if(number<1||number>3999){
