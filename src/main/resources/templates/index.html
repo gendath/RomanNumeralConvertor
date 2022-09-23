@@ -10,9 +10,12 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-8 col-sm-12 offset-md-2 offset-sm-0">
+            <div class="text-center">
+                <h1>Roman Numeral Converter</h1>
+            </div>
             <form class="border border-primary py-3 px-5"  action="/convert" method="post">
-                <label for="number">Please Enter a number to convert</label>
-                <input type="number" class="form-control" name="number" id="number">
+                <label for="number">Please Enter a number to convert it to a roman numeral</label>
+                <input type="number" class="form-control" name="number" id="number" required>
                 <button  style="width:100%" type="submit" class="btn btn-success mt-1">Submit</button>
             </form>
         </div>
@@ -20,7 +23,8 @@
     <div class="row">
         <div class="col-md-8 col-sm-12 offset-md-2 offset-sm-0">
             <div class="border border-success py-3 px-5 text-center">
-                <h3 th:text="${result==null?'':result}"></h3>
+                <h2>Results</h2>
+                <h3 th:text="${result}"></h3>
             </div>
 
 
